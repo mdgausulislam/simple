@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: aqua;
+            margin-bottom: 30px;
+        }
+        .menubar{
+            
+            margin-right: 50px;
+        }
+        .menubar li{
+            display: inline;
+            margin-right: 25px;
+            padding: 10px 20px;
+        }
+        .logo-name{
+            margin-left: 30px;
+        }
+        .menubar li:hover{
+            background-color: brown;
+            padding: 10px 20px;
+        }
+        @media screen and (max-width:600px) {
+        
+            .menubar li{
+                display: block;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <h1 class="logo-name">LogoName</h1>
+            <ul class="menubar">
+                <li>About</li>
+                <li>Contact Me</li>
+                <li>Setting</li>
+                <li>Profile</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
